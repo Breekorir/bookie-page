@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+}
+header a{
+    text-decoration: none;
+    color:black;
+    justify-content: space-between;
+}
+header img{
+    width:200px;
+    height: 200px;
+}
+header nav{
+    padding: 20px;
+    
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.intro .text-side{
+    background-color: black;
+    color: white;
+}
+body{
+    background-color: blanchedalmond;
+}
