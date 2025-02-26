@@ -5,6 +5,11 @@ header{
     text-transform: uppercase;
 
 }
+*{
+    padding: 0;
+    box-sizing: border-box;
+
+}
 header a{
     text-decoration: underline;
     color:black;
@@ -22,7 +27,7 @@ header nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color:grey;
+
 
 }
 .intro .image-side img{
@@ -61,15 +66,37 @@ body{
     background-color: azure;
     text-align: center;
     padding: 70px 40px;
+    font-size: 20px;
+    background-image: url(s-l500.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: infinite;
 }
 button{
-    background-color: blue;
+    background-color:blueviolet;
     color: black;
     padding:30px 30px ;
     border-radius: 10px;
+    
 
 }
 button:hover{
     background-color: white;
     cursor: pointer;
+}
+.footer-section{
+    display: flex;
+    align-items: center;
+}
+.footer-section ul li{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+.footer-section a{
+    display: block;
+text-decoration: none;
+background-image: url(mPGmT0r6IeTyIee.png);
+background-repeat: no-repeat;
+background-size: cover;
 }
