@@ -12,8 +12,9 @@ header{
 }
 header a{
     text-decoration: underline;
-    color:black;
+    color:whitesmoke;
     justify-content: space-between;
+
 }
 header img{
     width:100px;
@@ -35,19 +36,46 @@ header nav{
     padding: 70px 40px;
 }
 
-
+@keyframes moveImage{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform:translateX(200px) ;
+    }
+}
+.intro img{
+    width:100%;
+    animation: moveImage 2s infinite alternate ease-in-out;
+}
 .intro .text-side{
     font-size: 30px;
     color: white;
 }
 body{
-    background-color: blueviolet;
+    background-color:#333;
+
+}
+@keyframes moveright{
+    from{
+        transform: translateX(100%);
+
+    }
+    to{
+        transform: translateX(-100%);
+    }}
+.hero{
+    color: antiquewhite;
 }
 .hero .text-side ul{
     list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+    justify-content: stretch;
+    animation: moveright 12s linear infinite;
+    
+
 }
 .hero .text-side img{
     height: 400px;
@@ -67,7 +95,6 @@ body{
     text-align: center;
     padding: 70px 40px;
     font-size: 20px;
-    background-image: url(s-l500.webp);
     background-repeat: no-repeat;
     background-size: cover;
     animation: infinite;
@@ -96,7 +123,37 @@ button:hover{
 .footer-section a{
     display: block;
 text-decoration: none;
-background-image: url(mPGmT0r6IeTyIee.png);
-background-repeat: no-repeat;
-background-size: cover;
+}
+.login{
+    background-color: #333;
+
+    
+
+}
+.log{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 15px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    height: 400px;
+
+}
+input{
+    margin: 5px 0px;
+    height: 35px;
+    padding: 7px;
+}
+.line{
+    height: 35px;
+    margin: 5px 0px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+}
+.line:hover{
+    background-color: #333;
+    color: lightblue;
 }
